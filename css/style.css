@@ -1,0 +1,303 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))
+    ,url(../images/hero.jpg);
+
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    margin-top: 20px;
+    height: 100px;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+}
+.main-nav li{
+    margin-right: 30px;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-nav li a:hover{
+    color: chocolate;
+}
+.hero{
+    position: absolute;
+    top: 40%;
+    left: 150px;
+}
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+.btn{
+    border: 1px solid orange;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: orange;
+}
+.btn:hover{
+    color: white;
+    background-color: orange;
+}
+section{
+    padding: 40px 0px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 2.5px;
+    word-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h2::after{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: orange;
+    margin: 20px auto;
+}
+/* hr{
+    width: 100px;
+    border: 1px solid orange;
+    background-color: orange;
+} */
+.features-des{
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+.features{
+    text-align: center;
+}
+.features i{
+    color: orange;
+    font-size: 50px;
+}
+.meal{
+    padding: 0px;
+    margin-bottom: -5px;
+    background-color: black;
+    overflow: hidden;
+}
+.meal img{
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.meal img:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+/* .work:nth-child(1) */
+.work:first-child{
+    text-align: right;
+    padding-right: 5%;
+}
+.work:first-child img{
+    width: 40%;
+}
+.work:last-child{
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 20px;
+}
+h4{
+    text-align: center;
+    font-size: 1.2rem;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 50px;
+    /* padding: 10px 15px; */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.btn-image{
+    margin-top: 30px;
+}
+.work:last-child img{
+    height: 50px;
+}
+.city img{
+    width: 100%;
+}
+.city-info{
+    margin-bottom: 10px;
+}
+.city-info i{
+    color: orange;
+}
+#testimonials{
+    background: linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.707)),
+    url(../images/back-customers.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+    color: #fff;
+}
+#testimonials i{
+    font-size: 50px;
+    transform: rotate(45deg);
+}
+#testimonials p{
+    line-height: 1.5;
+}
+#testimonials img{
+    width: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.price{
+    background-color: #fff;
+    width: 90%;
+    margin: 20px auto;
+}
+.price-head{
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid #333;
+    padding: 15px;
+}
+h5{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+.price-head .price-des{
+    color: orange;
+    font-size: 50px;
+}
+.price-head .price-des span{
+    font-size: 25px;
+}
+.price-main{
+    border-bottom: 1px solid #333;
+    padding: 15px;
+}
+.price-main .price-list{
+    list-style:none;
+    padding: 0;
+}
+.price-main .price-list li{
+    margin: 20px 0;
+}
+.price-main .price-list li i{
+    color: orange;
+    font-size: 18px;
+    padding-right: 15px;
+}
+.price-footer{
+    background-color: rgb(249, 249, 249);
+    padding: 15px;
+}
+.price-footer a{
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.4s all;
+}
+.price-footer a:hover{
+    background-color: transparent;
+    color: orange;
+    border: 1px solid orange;
+}
+form{
+    padding: 20px;
+}
+label{
+    margin-bottom: 7px;
+}
+input[type=text],
+input[type=email]
+,select
+,textarea{
+    margin-bottom: 7px;
+    padding:7px;
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+input[type=checkbox]{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+button{
+    background-color: orange;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid orangered;
+    margin-left: 50px;
+}
+button:hover{
+    background-color: transparent;
+    color: orange;
+}
+
+footer{
+    padding: 40px 0px;
+    background-color: #333;   
+}
+footer p{
+    color: #ccc;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-nav, .social-nav{
+    display: flex;
+    list-style: none;
+}
+.social-nav{
+    float:right;
+}
+.footer-nav li, .social-nav li{
+    margin-right: 20px;
+}
+.footer-nav li a, .social-nav li a{
+    text-decoration: none;
+    color: #ddd;
+}
+.footer-nav li a:hover, .social-nav li a:hover{
+    text-decoration: underline;
+    color: orange;
+}
